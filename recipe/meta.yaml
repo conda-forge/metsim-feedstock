@@ -1,4 +1,4 @@
-{% set version = "1.1.0" %}
+{% set version = "2.0.0" %}
 
 package:
   name: metsim
@@ -17,18 +17,18 @@ build:
 
 requirements:
   build:
-    - python >=3
+    - python>=3.5
     - pip
   run:
-    - python >=3
+    - python>=3.5
     - dask
-    - netcdf4
+    - netcdf4>=1.2.5
     - numba
-    - numpy
+    - numpy>=1.11.2
     - pandas
-    - scipy
+    - scipy>=0.18.1
     - toolz
-    - xarray
+    - xarray=0.10.9
 
 test:
   imports:
