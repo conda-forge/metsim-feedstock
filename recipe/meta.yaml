@@ -1,4 +1,4 @@
-{% set version = "1.1.0" %}
+{% set version = "2.0.0" %}
 
 package:
   name: metsim
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/m/metsim/metsim-{{ version }}.tar.gz
-  sha256: 96598273aee7fd0d502699395f0ffaa3e4a780dfbdf28c35c1c541d2985f9154
+  sha256: 59f515efff5d4f1f5747d667c28e68baaffbd51389878841f24a5385b2c50ad7
 
 build:
   number: 0
