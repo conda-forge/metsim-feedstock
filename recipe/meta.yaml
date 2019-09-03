@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/m/metsim/metsim-{{ version }}.tar.gz
-  sha256: 0cfb27c92606c0e5a34013888e9e652238bec55359ba6e74cdc54a77c39c9ecb
+  sha256: f5f995350b2a8cbe515cc7387a76d15306e09e1d0111babbf42963af5e2aa239
 
 build:
   number: 0
