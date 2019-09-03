@@ -1,4 +1,4 @@
-{% set version = "2.0.1" %}
+{% set version = "2.1.0" %}
 
 package:
   name: metsim
@@ -28,7 +28,7 @@ requirements:
     - pandas
     - scipy>=0.18.1
     - toolz
-    - xarray=0.10.9
+    - xarray>0.11.0
 
 test:
   imports:
