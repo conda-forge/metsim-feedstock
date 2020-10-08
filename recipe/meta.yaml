@@ -1,4 +1,4 @@
-{% set version = "2.0.1" %}
+{% set version = "2.4.0" %}
 
 package:
   name: metsim
@@ -6,8 +6,8 @@ package:
 
 source:
   url: https://pypi.io/packages/source/m/metsim/metsim-{{ version }}.tar.gz
-  sha256: 0cfb27c92606c0e5a34013888e9e652238bec55359ba6e74cdc54a77c39c9ecb
-
+  sha256: 58b284109766827a86a734f79607084b3e574c46f9e7450e057a7be4cafafa4e
+  
 build:
   number: 0
   noarch: python
@@ -25,10 +25,10 @@ requirements:
     - netcdf4>=1.2.5
     - numba
     - numpy>=1.11.2
-    - pandas
+    - pandas>=0.25.0
     - scipy>=0.18.1
     - toolz
-    - xarray=0.10.9
+    - xarray>0.11.0
 
 test:
   imports:
