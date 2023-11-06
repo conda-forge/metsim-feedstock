@@ -1,4 +1,4 @@
-{% set version = "2.4.1" %}
+{% set version = "2.4.3" %}
 
 package:
   name: metsim
@@ -6,17 +6,17 @@ package:
 
 source:
   url: https://pypi.io/packages/source/m/metsim/metsim-{{ version }}.tar.gz
-  sha256: 5470dc2bbff8e690fd6d243c6192f6d878440f457d2e9382953ba48ddd4ff6c8
-  
+  sha256: 1e5ef7bcf325d67fb1d9f0618b025183d7570dc309ba26dcf8412cc7cc79848a
+
 build:
-  number: 1
+  number: 0
   noarch: python
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
     - ms = metsim.cli.ms:main
 
 requirements:
-  build:
+  host:
     - python >=3.5
     - pip
   run:
