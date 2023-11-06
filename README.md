@@ -1,11 +1,11 @@
-About metsim
-============
+About metsim-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/metsim-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/UW-Hydro/MetSim
 
 Package license: GPL-3.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/metsim-feedstock/blob/main/LICENSE.txt)
 
 Summary: Meteorology Simulator for Python
 
