@@ -5,22 +5,22 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/m/metsim/metsim-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/m/metsim/metsim-{{ version }}.tar.gz
   sha256: 6e4d8e4b2d496f015e16cd90546a76f6059b3241169538b82aeb1d5ea391e27c
   
 build:
-  number: 0
+  number: 1
   noarch: python
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
     - ms = metsim.cli.ms:main
 
 requirements:
-  build:
-    - python >=3.5
+  host:
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.5
+    - python >={{ python_min }}
     - dask
     - netcdf4 >=1.2.5
     - numba
@@ -31,6 +31,8 @@ requirements:
     - xarray >0.11.0
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - metsim
     - metsim.methods
